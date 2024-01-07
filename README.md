@@ -30,7 +30,7 @@ If you plan to store the backup on GitHub, go ahead and create a new repo.
 
 To install this script, `SSH` into your Pi and execute the following command:
 ```shell
-wget -qO setup_klipper_backup.sh "https://raw.githubusercontent.com/Low-Frequency/klipper_backup_script/main/setup_klipper_backup.sh" && chmod +x setup_klipper_backup.sh && ./setup_klipper_backup.sh
+wget -qO setup_klipper_backup.sh "https://raw.githubusercontent.com/computergeek1507/klipper_backup_script/main/setup_klipper_backup.sh" && chmod +x setup_klipper_backup.sh && ./setup_klipper_backup.sh
 ```
 
 Be aware that this script only works correctly if the installed version of `git` is 2.28 or newer. The install script will check that for you and prompt you to install the latest version of `git` from the source. This is done with a separate [git install script](install-git.sh). You can also use this script to update `git` since it won't be updated by `apt` anymore.
