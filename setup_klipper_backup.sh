@@ -140,7 +140,7 @@ function setup_git_repo {
   				echo -e "Please add this key to your GitHub account:\n"
   				cat "$HOME/.ssh/github_id_rsa.pub"
   				echo -e "\nYou can find instructions for this here:"
-  			  echo -e"https://github.com/Low-Frequency/klipper_backup_script\n"
+  			  echo -e"https://github.com/computergeek1507/klipper_backup_script\n"
   				read -p "Press enter to continue" CONTINUE
   				;;
   			y|Y)
@@ -161,7 +161,7 @@ function setup_git_repo {
   	echo -e "Please copy the public key and add it to your GitHub account:\n"
   	cat "$HOME/.ssh/github_id_rsa.pub"
   	echo -e "\nYou can find instructions for this here:"
-  	echo -e "https://github.com/Low-Frequency/klipper_backup_script\n"
+  	echo -e "https://github.com/computergeek1507/klipper_backup_script\n"
   	read -p "Press enter to continue" CONTINUE
   fi
 
@@ -333,7 +333,7 @@ function check_requirements {
   echo "Downloading backup script"
   if [[ ! -d "$HOME/scripts/klipper_backup_script" ]]
   then
-    git -C "$HOME/scripts" clone https://github.com/Low-Frequency/klipper_backup_script
+    git -C "$HOME/scripts" clone https://github.com/computergeek1507/klipper_backup_script
   else
     git pull origin main
   fi
